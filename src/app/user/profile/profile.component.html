@@ -1,0 +1,8 @@
+<p>profile works! Parent</p>
+<!-- <app-button></app-button> -->
+<input name="parent" [(ngModel)]="parent">
+<button (click)="passValue()">CLick</button>
+
+
+<!-- <p>Output data is {{outPutValue}}</p> -->
+<app-profile-child [abc]="passData" (newItemEvent)="valueFromChild($event)"></app-profile-child>

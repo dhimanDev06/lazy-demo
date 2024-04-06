@@ -1,0 +1,6 @@
+<p>profile-child works! {{abc}}</p>
+
+<label>OutPut Data</label>
+<!-- <input name="output" [(ngModel)]="outputValue"> -->
+<button (click)="backtochild()">Back to Child</button>
+<app-profile-grand-child [abc]="abc"></app-profile-grand-child>

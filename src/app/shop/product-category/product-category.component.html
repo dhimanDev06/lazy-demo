@@ -1,0 +1,16 @@
+<p>product-category works!</p>
+<app-button></app-button>
+<button (click)="loadAPI()">Call API</button>
+
+<button (click)="transferData()">Pass</button>
+
+{{passData}}
+
+<ag-grid-angular 
+		style="width: 1000px; height: 500px;" 
+		class="ag-theme-quartz"
+		[rowData]="productList" 
+		[columnDefs]="headerConfig">
+</ag-grid-angular>
+
+<!-- {{data | json}} -->
